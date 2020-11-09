@@ -1,0 +1,82 @@
+body {
+	background-color: #f4f4f4;
+	color: #000;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.6em;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+#main-header {
+	font-size: 2pc;
+	text-align: center;
+}
+
+#navbar ul {
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+#navbar li {
+	display: inline;
+	text-align: center;
+}
+
+#navbar a {
+	text-decoration: none;
+	font-size: 18px;
+	padding-right: 20px;
+}
+
+#showcase {
+	padding-top: 30px;
+}
+
+#showcase img {
+	float: right;
+	height: 350px;
+}
+
+#hard-skills {
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+#hard-skills ul {
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+#soft-skills {
+	float: right;
+	width: 50%;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+#soft-skills ul {
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
