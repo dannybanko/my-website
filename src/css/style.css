@@ -16,23 +16,12 @@ a:hover {
 	color: #4b2e83;
 }
 
+/* applies to all .html files */
 .container {
 	width: 80%;
 	margin: auto;
 	overflow: hidden;
 }
-
-
-#main-header {
-	font-size: 30px;
-	text-align: center;
-}
-
-#education-header {
-	font-size: 20px;
-	text-align: center;
-}
-
 
 #navbar ul {
 	padding: 0;
@@ -51,6 +40,19 @@ a:hover {
 	padding-right: 20px;
 }
 
+#footer img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+}
+
+/* for index.html */
+#main-header {
+	font-size: 20px;
+	text-align: center;
+}
+
 #showcase {
 	padding-top: 30px;
 }
@@ -58,12 +60,6 @@ a:hover {
 #showcase img {
 	float: right;
 	height: 400px;
-}
-
-#edu-showcase img {
-	float: right;
-	height: 375px;
-	width: 600px;
 }
 
 #hard-skills {
@@ -92,15 +88,81 @@ a:hover {
 	text-align: center;
 }
 
-#footer img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 150px;
+#more {
+	text-align: center;
 }
 
+#more ul {
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
 
+#more li {
+	text-align: center;
+}
 
+/* for education.html */ 
+#education-header {
+	font-size: 20px;
+	text-align: center;
+}
+
+#edu-showcase img {
+	float: right;
+	height: 375px;
+	width: 600px;
+}
+
+/* for projects.html */ 
+
+#proj-header {
+	font-size: 20px;
+	text-align: center;
+}
+
+#proj-showcase img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#proj-showcase h1 {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+
+#proj-showcase h2 {
+	text-align: center;
+}
+
+#proj-showcase h3 {
+	text-align: center;
+}
+
+/* for social.html */ 
+
+#soc-header {
+	font-size: 20px;
+	text-align: center;
+}
+
+#soc-showcase h1 {
+	text-align: center;
+}
+
+#soc-showcase h3 {
+	text-align: center;
+}
+
+#soc-showcase img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
 
 
 
