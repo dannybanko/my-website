@@ -1,9 +1,19 @@
 body {
-	background-color: #f4f4f4;
+	background-color: #fff;
 	color: #000;
 	font-family:  Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	line-height: 1.6em;
+}
+
+a {
+	text-decoration: none;
+}
+a:link, a:visited {
+	color: black;
+}
+a:hover {
+	color: #4b2e83;
 }
 
 .container {
@@ -12,10 +22,17 @@ body {
 	overflow: hidden;
 }
 
+
 #main-header {
-	font-size: 2pc;
+	font-size: 30px;
 	text-align: center;
 }
+
+#education-header {
+	font-size: 20px;
+	text-align: center;
+}
+
 
 #navbar ul {
 	padding: 0;
@@ -40,7 +57,13 @@ body {
 
 #showcase img {
 	float: right;
-	height: 350px;
+	height: 400px;
+}
+
+#edu-showcase img {
+	float: right;
+	height: 375px;
+	width: 600px;
 }
 
 #hard-skills {
@@ -69,6 +92,12 @@ body {
 	text-align: center;
 }
 
+#footer img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+}
 
 
 
