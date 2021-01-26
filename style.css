@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Asap', sans-serif;
+}
+
+body {
+	background-image: linear-gradient(to right, #424A3E,#98B684);
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-image: linear-gradient(to right, #424A3E,#98B684);
+}
+
+.logo {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 22px;
+    color: rgb(221, 217, 217);
+
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: rgb(221, 217, 217);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.main-picture {
+    margin-top: 10px;
+    background-blend-mode: lighten;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+}
+
+@media screen and (max-width:1024px) {
+    .nav-links {
+        width: 50%;
+    }
+}
