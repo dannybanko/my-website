@@ -6,7 +6,7 @@
 }
 
 body {
-	background-image: linear-gradient(to right, #424A3E,#98B684);
+	background-image: linear-gradient(to right, #ffffff,#cccecc);
 }
 
 nav a:hover {
@@ -18,14 +18,15 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-image: linear-gradient(to right, #424A3E,#98B684);
+    background-image: linear-gradient(to right, #a09f9f,#000000);
+    opacity: 70%;
 }
 
 .logo {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 22px;
-    color: rgb(221, 217, 217);
+    color: rgb(255, 255, 255);
 
 }
 
@@ -47,17 +48,15 @@ nav {
     font-size: 16px;
 }
 
-.main-picture {
-    margin-top: 10px;
-    background-blend-mode: lighten;
+.banner img {
+    margin: 20px;
+    width: 40%;
+    height: auto;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    height: auto;
+.banner h1 {
+    font-size: 50px;
+    text-align: center;
 }
 
 @media screen and (max-width:1024px) {
