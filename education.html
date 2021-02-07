@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <div class="logo">
+                <h4>Danny Banko</h4>
+            </div>
+    
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#education.html">Education</a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="#">Connect</a>
+                </li>
+            </ul>
+        </nav> 
+    </header>
+
+    <section class="banner"></section>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+    <section class="container">
+        <a name="education"></a>
+        <div class="overview">
+            <h1>Education</h1>
+            <br>
+            <h3>University of Washington, Bothell Campus</h3>
+            <h4>Bachelor of Science,</h3>
+            <h2>Computer Science and Software Engineering</h3>
+            <br>
+            <p>GPA: 3.63/4.0</p>
+            <ul>
+                <li>Deans List Student</li>
+                <li>Officer, ACM at UWB</li>
+            </ul>
+
+            <h3>Shoreline Community College</h3>
+            <h4>Associate of Arts,</h3>
+            <h2>Computer Science</h3>
+            <br>
+            <p>GPA: 3.79/4.0</p>
+            <ul>
+                <li>4x Presidents List Student</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
