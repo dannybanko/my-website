@@ -5,6 +5,23 @@
     font-family: 'Asap', sans-serif;
 }
 
+header{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+}
+
+header.sticky {
+    background: black;
+    opacity: 80%;
+}
+
+header.sticky.nav-links ul li a {
+    color: white;
+    z-index: 1000;
+}
+
 .slider {
     position: absolute;
     top: 0;
@@ -19,12 +36,12 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 22px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 
 }
 
 nav a:hover {
-    color: white;
+    color: rgb(255, 253, 253);
 }
 
 nav {
@@ -32,8 +49,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-image: linear-gradient(to right, #3a3a3a,#000000);
-    opacity: 70%;
+    background: #c7c7c7;
 }
 
 .nav-links {
@@ -49,17 +65,17 @@ nav {
 .nav-links a {
     text-decoration: none;
     letter-spacing: 2px;
-    color: rgb(212, 211, 211);
+    color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 16px;
 }
 
-section {
+.image {
     display: flex;
-    height: 80vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-
+    padding-top: 30px;
 }
 
 .mainImage{
@@ -74,16 +90,6 @@ section {
     object-fit: cover;
 }
 
-.myName {
-    position: absolute;
-    top: 90%;
-    left: 10%;
-    font-size: 60px;
-    transform: translate(-20%, -90%);
-    color: white;
-    z-index: 1;
-}
-
 .mainImage::after {
     content: "";
     background: black;
@@ -94,6 +100,49 @@ section {
     top: 0;
     opacity: 0.1;
 }
+
+.container {
+    background: linear-gradient(to right, white, rgb(245, 245, 245));
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+.overview {
+    align-items: center;
+    position: relative;
+    left: 10%;
+    top: 20%;
+}
+
+.overview h1{
+   text-transform: uppercase;
+   font-size: 60px;
+   font-weight: bold;
+   padding-bottom: 30px;
+}
+
+.overview h2{
+    text-transform: uppercase;
+    font-size: 20px;
+ }
+
+ .overview h3{
+    text-transform: uppercase;
+    font-size: 25px;
+    color: rgb(97, 97, 97);
+ }
+
+ .overview h4{
+    text-transform: uppercase;
+    font-size: 20px;
+ }
+
+ .overview ul {
+     padding-bottom: 50px;
+ }
+
+
 
 #footer {
     text-align: center;
