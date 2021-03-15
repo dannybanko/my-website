@@ -39,7 +39,7 @@ nav {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 30px;
-    color: #14213d;
+    color: black;
 }
 .nav-links {
     display: flex;
@@ -50,17 +50,40 @@ nav {
     list-style: none;
 }
 .nav-links a {
-    color: #14213d;
     text-decoration: none;
-    letter-spacing: 2px;
+    text-rendering: geometricPrecision;
+    position: relative;
+    display: block;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
     font-weight: bold;
+    transition: transform .3s cubic-bezier(0.55, 0, 0.55, 0.2);
+    transform-origin: 50% 30%;
+}
+
+.nav-links a:hover {
+    color: #e5e5e5;
+    transform: scale(1.2);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    opacity: 85%;
+}
+.sticky + .content {
+    padding-top: 60px;
 }
 
 #main img {
     height: auto;
     width: 84%;
     display: block;
-    padding-top: 4rem;
+    padding-top: 8rem;
     padding-bottom: 4rem;
     margin-left: auto;
     margin-right: auto;
@@ -99,6 +122,19 @@ nav {
 }
 .edu-header {
     color: #14213d;
+}
+.education h3 {
+    font-size: 28px;
+}
+.education h4 {
+    font-size: 24px;
+    color: #565f74;
+}
+.education h5 {
+    padding-bottom: 1rem;
+}
+.education p {
+    padding-left: 3rem;
 }
 
 .card {

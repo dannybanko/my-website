@@ -27,7 +27,7 @@
     </header>
     <div class="container">
         <div id="main">
-            <img src="images/IMG_1470.jpeg" alt="">
+            <img src="images/IMG_1469.jpeg" alt="">
         </div>
     </div>
 
@@ -36,10 +36,9 @@
             <div class="about-me" >
                 <h1>About Me</h1>
                 <p>
-                    Hi I'm Danny! I am a Seattle native, nature enthusiast, and Computer Science student. 
-                    When I am not studying, you'll find me playing Rocket League, kicking a soccer ball 
-                    with my little brother, or hiking in the PNW. I am eager to work on some new personal 
-                    projects in the coming months.
+                    Hi I'm Danny! I am a Seattle native, Eagle Scout, nature enthusiast, and Computer 
+                    Science student. When I am not studying, you'll find me playing Rocket League, 
+                    kicking a soccer ball with my little brother, or hiking in the PNW. 
                 </p>
             </div>
             <div class="working-on">
@@ -54,14 +53,20 @@
         </div>
     </div>
     <div class="education-container" data-aos="fade-right">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="education">
                 <h1 style="color: #14213d;">Education</h1>
-                <h4>University of Washington Bothel</h4>
-                <h5>BS, Computer Science and Software Engineering</h5>
+                <h3>University of Washington Bothel</h3>
+                <h4>BS, Computer Science and Software Engineering</h4>
+                <h5>March 2020 - Present</h5>
+                <p>2 time Dean's List student</p>
+                <p>3.73/4.0 GPA</p>
                 <br>
-                <h4>Shoreline Community College</h4>
-                <h5>AA, Computer Science</h5>
+                <h3>Shoreline Community College</h3>
+                <h4>AA, Computer Science</h4>
+                <h5>September 2017 - March 2020</h5>
+                <p>4 time President's List Student</p>
+                <p>3.79/4.0 GPA</p>
             </div>
         </div>
     </div>
@@ -79,7 +84,7 @@
                     focus on website <b>accessibility</b> and <b>usability</b>. Implemented 
                     with JavaScript, HTML5, SCSS and Bootstrap.
                     </p>
-                    <a href="" class="btn">Check out the website here</a>
+                    <a href="https://uwbhacks.com/" target="blank" class="btn">Check out the website here</a>
                 </div>
             </section>
             <section class="card" data-aos="fade-left">
@@ -93,24 +98,40 @@
                             his mistakes and eating plenty of food. Stay away from ghosts! Implemented
                             with Python3
                         </p>
-                        <a href="" class="btn">See the GitHub repository here</a>
+                        <a href="https://github.com/dannybanko/AI-Pacman" target="blank" class="btn">See the GitHub repository here</a>
                     </div> 
             </section>
             <section class="card" data-aos="fade-right">
+                <img src="images/Screen Shot 2021-03-15 at 2.53.30 PM.png" alt="Danny's Website Screenshot">
                 <div>
                     <h2>Personal Website</h2>
                     <p>
                         The website you are currently on. This website is intented to be a 
                         continous project where I can make improvements and add additional 
                         projects and expereince as I progress through my education and 
-                        professional career. This is the place to learn more about me, and 
-                        see interesting facts you woudln't see on my resume. Implemented 
+                        professional career. This is the place to learn more about me, 
+                        facts you woudln't see on my resume. Implemented 
                         with JavaScript, HTML5 and CSS
                     </p>
+                    <br>
+                    <p>This image is what my previous website looked like!</p>
                 </div>
             </section>
             <section class="card" data-aos="fade-left">
-                <img src="images/Screen Shot 2021-03-13 at 4.12.09 PM.png" alt="">
+                <img src="images/Screen Shot 2021-03-15 at 3.26.53 PM.png" alt="Output of Sudoku Solver Project"> 
+                <div>
+                    <h2>Sudoku Solver</h2>
+                    <p>
+                        Developed a Sudoku Solver project that uses a board reader factory 
+                        to take in multiple types of text files and solves the Sudoku Board.
+                        This project uses recursive backtracking to solve the selected board,
+                        and then prints the correct answer meeting all Sudoku constraints. 
+                    </p>
+                    <a href="https://github.com/dannybanko/SudokuSolver" target="blank" class="btn">See the GitHub Repository here</a>
+                </div>
+            </section>
+            <section class="card" data-aos="fade-right">
+                <img src="images/Screen Shot 2021-03-13 at 4.12.09 PM.png" alt="Output of Movie Store Project">
                 <div> 
                     <h2>Movie Store</h2>
                     <p>
@@ -120,7 +141,7 @@
                         transactions, updates store inventory, tracks customer transaction 
                         history, and store transaction history.
                     </p>
-                    <a href="" class="btn">See the Github repository here</a>
+                    <a href="https://github.com/dannybanko/Movie-Store" target="blank" class="btn">See the Github repository here</a>
                 </div> 
             </section>
         </div>
@@ -132,9 +153,27 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-          offset: 400,
+          offset: 200,
           duration: 1000
       });
+    </script>
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        // Get the navbar
+        var navbar = document.getElementById("nav-bar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
     </script>
 </body>
 </html>
