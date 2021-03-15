@@ -20,7 +20,7 @@ body {
 .container h1 {
     font-size: 40px;
     text-transform: uppercase;
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-bottom: 2rem;
 }
 
@@ -68,7 +68,6 @@ nav {
 }
 .main-container {
     background: #e5e5e5;
-    height: 60vh;
 }
 .main-container p {
     color: #14213d;
@@ -76,15 +75,30 @@ nav {
 
 .about-me {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
-
 .working-on {
     color: #14213d;
+    padding-bottom: 3rem;
+    text-align: center;
 }
 .working-on h3 {
     padding: 2rem 0;
     color: #fca311;
     font-size: 40px;
+}
+
+.education-container {
+    background: #fca311;
+}
+.education {
+    color: #14213d;
+    padding-bottom: 3rem;
+}
+.edu-header {
+    color: #14213d;
 }
 
 .card {
@@ -123,6 +137,15 @@ nav {
     color: #fca311;
 }
 
+#footer {
+    height: 10vh;
+    background: #fca311;
+    text-align: center;
+    color: #14213d;
+}
+#footer p {
+    padding-top: 25px;
+}
 
 @media(max-width: 700px) {
     .card {
