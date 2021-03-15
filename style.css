@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+    background: #14213d;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+    color: #e5e5e5;
+}
+.container h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background: #fca311;
+}
+.nav-logo {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 30px;
+    color: #14213d;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links a {
+    color: #14213d;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+#main img {
+    height: auto;
+    width: 84%;
+    display: block;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.main-container {
+    background: #e5e5e5;
+    height: 60vh;
+}
+.main-container p {
+    color: #14213d;
+}
+
+.about-me {
+    text-align: center;
+}
+
+.working-on {
+    color: #14213d;
+}
+.working-on h3 {
+    padding: 2rem 0;
+    color: #fca311;
+    font-size: 40px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 3rem;
+    background: #e5e5e5;
+    color: #14213d;
+}
+.card h2 {
+    margin-bottom: 2rem;
+}
+.card img {
+    height: 400px;
+}
+.card > div {
+    padding: 2rem;
+}
+.card:nth-child(even) img {
+    order: 2;
+}
+
+.btn {
+    display: inline-block;
+    background: #fca311;
+    color: #14213d;
+    padding: 0.8rem 1.8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+.container h1 {
+    color: #fca311;
+}
+
+
+@media(max-width: 700px) {
+    .card {
+        display: block;
+    }
+}

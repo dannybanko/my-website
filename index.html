@@ -1,11 +1,135 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
     <title>Danny Banko</title>
 </head>
 <body>
-    
+    <header>
+        <nav id="nav-bar">
+            <div class="nav-logo">
+                <h4>Danny Banko</h4>
+            </div>
+            <ul class="nav-links">
+                <li> <a href="">About Me</a> </li>
+                <li> <a href="">Experience</a></li>
+                <li> <a href="">Projects</a></li>
+                <li> <a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div id="main">
+            <img src="images/IMG_1470.jpeg" alt="">
+        </div>
+    </div>
+
+    <div class="main-container" data-aos="fade-top">
+        <div class="container">
+            <div class="about-me" >
+                <h1>About Me</h1>
+                <p>
+                    I am a Seattle native and currently studying Computer Science. When I am not 
+                    studying you'll find me playing Rocket League, kicking a soccer ball with my little
+                    brother, or hiking in the PNW. I am eager to work on some new personal projects in 
+                    the coming months.
+                </p>
+            </div>
+            <div class="working-on">
+                <h1>What I'm working on</h1>
+                <div>
+                    <p>Getting my Bachelor of Science in Computer Science and Software Engineering</p>
+                    <p>Avid plannner of events focused on preparing students for future STEM careers</p>
+                    <p>Actively seaking software engineering or related internships</p>
+                    <p>Various volunteer work (i.e., building websites, coaching soccer)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="proj-section">
+            <h1>Projects</h1>
+            <section class="card" data-aos="fade-right">
+                <img src="images/Screen Shot 2021-03-13 at 3.08.13 PM.png" alt="UWB Hacks from Home website">
+                <div>
+                    <h2>UWB Hacks From Home Webiste</h2>
+                    <p>
+                    UWB chapter of ACM's spring hackathon website built to inform students
+                    and potential sponsor companies about our event. Developed with a high 
+                    focus on website <b>accessibility</b> and <b>usability</b>. Implemented 
+                    with JavaScript, HTML5, SCSS and Bootstrap.
+                    </p>
+                    <a href="" class="btn">Check out the website here</a>
+                </div>
+            </section>
+            <section class="card" data-aos="fade-left">
+                    <img src="images/Screen Shot 2021-03-13 at 8.59.58 PM.png" alt="Pacman and ghosts">
+                    <div>
+                        <h2>Pacman AI</h2>
+                        <p>
+                            Developed an AI Pacman project in three sprints: search and planning, 
+                            multi-agent search, and reinforcement learning. Pacman is successfully 
+                            able to navigate through various grid worlds while learning from 
+                            his mistakes and eating plenty of food. Stay away from ghosts! Implemented
+                            with Python3
+                        </p>
+                        <a href="" class="btn">See the GitHub repository here</a>
+                    </div> 
+            </section>
+            <section class="card" data-aos="fade-right">
+                <div>
+                    <h2>Personal Website</h2>
+                    <p>
+                        The website you are currently on. This website is intented to be a 
+                        continous project where I can make improvements and add additional 
+                        projects and expereince as I progress through my education and 
+                        professional career. This is the place to learn more about me, and 
+                        see interesting facts you woudln't see on my resume. Implemented 
+                        with JavaScript, HTML5 and CSS
+                    </p>
+                </div>
+            </section>
+            <section class="card" data-aos="fade-left">
+                <img src="images/Screen Shot 2021-03-13 at 4.12.09 PM.png" alt="">
+                <div> 
+                    <h2>Movie Store</h2>
+                    <p>
+                        Developed a large project to simulate a movie store and its daily 
+                        operations. This project uses a factory design pattern to allow for 
+                        scaleable, reusable, and maintainable code. Movie store preforms 
+                        transactions, updates store inventory, tracks customer transaction 
+                        history, and store transaction history.
+                    </p>
+                    <a href="" class="btn">See the Github repository here</a>
+                </div> 
+            </section>
+        </div>
+    </div>
+
+    <div class="education">
+        <h1>Education</h1>
+
+        <h4>University of Washington Bothel</h4>
+        <h5>BS, Computer Science and Software Engineering</h5>
+
+        <h4>Shoreline Community College</h4>
+        <h5>AA, Computer Science</h5>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 400,
+          duration: 1000
+      });
+    </script>
 </body>
 </html>
