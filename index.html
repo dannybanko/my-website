@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Danny Banko personal website, used to showcase work experience, 
+    projects, and other information about Danny">
+    <meta name="keywords" content="portfolio, personal website, Danny website, Banko website, Danny
+    portfolio, Danny's portfolio, Banko portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
@@ -17,6 +21,11 @@
         <nav id="nav-bar">
             <div class="nav-logo">
                 <a href="#home"><h4>Danny Banko</h4></a>
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
             <ul class="nav-links">
                 <li> <a href="#about">About Me</a> </li>
@@ -78,7 +87,7 @@
     </div>
     <a id="experience"></a>
     <div class="experience-container" data-aos="fade-left">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="experience">
                 <h1>Experience</h1>
                 <div class="job">
@@ -87,8 +96,8 @@
                     <ul>
                         <li>Web Developer for our clubs website team</li>
                         <li>
-                            Develop and maintain club related websites to inform students, faculty, 
-                            and potential sponsors informed about our events
+                            Develop and maintain club related websites to ensure students, faculty, 
+                            and potential sponsors are informed about our events
                         </li>
                     </ul>
                 </div>
@@ -140,7 +149,7 @@
                     focus on website <b>accessibility</b> and <b>usability</b>. Implemented 
                     with JavaScript, HTML5, SCSS and Bootstrap.
                     </p>
-                    <a href="https://uwbhacks.com/" target="blank" class="btn">Check out the website here</a>
+                    <a href="https://uwbhacks.com/" target="_blank" class="btn">Check out the website here</a>
                 </div>
             </section>
             <section class="card" data-aos="fade-left">
@@ -154,7 +163,7 @@
                             his mistakes and eating plenty of food. Stay away from ghosts! Implemented
                             with Python3
                         </p>
-                        <a href="https://github.com/dannybanko/AI-Pacman" target="blank" class="btn">See the GitHub repository here</a>
+                        <a href="https://github.com/dannybanko/AI-Pacman" target="_blank" class="btn">See the GitHub repository here</a>
                     </div> 
             </section>
             <section class="card" data-aos="fade-right">
@@ -184,7 +193,7 @@
                         transactions, updates store inventory, tracks customer transaction 
                         history, and store transaction history.
                     </p>
-                    <a href="https://github.com/dannybanko/Movie-Store" target="blank" class="btn">See the Github repository here</a>
+                    <a href="https://github.com/dannybanko/Movie-Store" target="_blank" class="btn">See the Github repository here</a>
                 </div> 
             </section>
             <section class="card" data-aos="fade-right">
@@ -197,7 +206,7 @@
                         This project uses recursive backtracking to solve the selected board,
                         and then prints the correct answer meeting all Sudoku constraints. 
                     </p>
-                    <a href="https://github.com/dannybanko/SudokuSolver" target="blank" class="btn">See the GitHub Repository here</a>
+                    <a href="https://github.com/dannybanko/SudokuSolver" target="_blank" class="btn">See the GitHub Repository here</a>
                 </div>
             </section>
         </div>
@@ -207,6 +216,7 @@
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="app.js"></script>
     <script>
       AOS.init({
           offset: 200,

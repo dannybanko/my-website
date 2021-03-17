@@ -60,13 +60,13 @@ nav {
 }
 .nav-links {
     display: flex;
-    justify-content: space-between;
-    width: 40%;
+    justify-content: space-around;
+    width: 50%;
 }
 .nav-links li {
     list-style: none;
 }
-.nav-links a {
+.nav-links li a {
     text-decoration: none;
     text-rendering: geometricPrecision;
     position: relative;
@@ -232,14 +232,52 @@ nav {
     padding-top: 25px;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 768px) {
     .card {
         display: block;
     }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:768px) {
+    
+    nav {
+        position: relative;
+    }
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 20;
+    }
+    .line {
+        width: 30px;
+        height: 3px;
+        background: black;
+        margin: 5px;
+    }
     .nav-links {
-        width: 50%;
+        position: fixed;
+        background: #fca311;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15rem;
+    }
+    .nav-links li a {
+        font-size: 16px;
+        padding-top: 4rem;
+    }
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
     }
 }
