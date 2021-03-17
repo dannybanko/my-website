@@ -133,8 +133,36 @@ nav {
 .education h5 {
     padding-bottom: 1rem;
 }
-.education p {
+.education li {
     padding-left: 3rem;
+    list-style-position: inside;
+    padding-bottom: .3rem;
+}
+
+.experience-container {
+    background: #e5e5e5;
+    padding-bottom: 3rem;
+}
+.job {
+    text-align: left;
+}
+.job h3 {
+    color: #14213d;
+    font-size: 1.8rem;
+}
+.job h5 {
+    color: #565f74;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+}
+.job ul {
+    padding-bottom: 2rem;
+}
+.job li {
+    color: #14213d;
+    padding-left: 3rem;
+    list-style-position: inside;
+    padding-bottom: .3rem;
 }
 
 .card {
@@ -186,5 +214,11 @@ nav {
 @media(max-width: 700px) {
     .card {
         display: block;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .nav-links {
+        width: 50%;
     }
 }
