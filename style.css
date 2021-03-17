@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.3rem;
@@ -32,7 +36,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    min-height: 7vh;
     background: #fca311;
 }
 .nav-logo {
@@ -40,6 +44,19 @@ nav {
     letter-spacing: 3px;
     font-size: 30px;
     color: black;
+}
+.nav-logo a {
+    text-decoration: none;
+    text-rendering: geometricPrecision;
+    position: relative;
+    display: block;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: transform .3s cubic-bezier(0.55, 0, 0.55, 0.2);
+    transform-origin: 50% 30%;
 }
 .nav-links {
     display: flex;
@@ -64,6 +81,10 @@ nav {
 }
 
 .nav-links a:hover {
+    color: #e5e5e5;
+    transform: scale(1.2);
+}
+.nav-logo a:hover {
     color: #e5e5e5;
     transform: scale(1.2);
 }
